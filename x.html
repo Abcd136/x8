@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小米 - 应用详情</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+        }
+
+        .header {
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #fff;
+        }
+
+        .back-button {
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .header-right {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .app-info {
+            padding: 20px;
+            background: #fff;
+            display: flex;
+            gap: 15px;
+        }
+
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 15px;
+        }
+
+        .app-details {
+            flex: 1;
+        }
+
+        .app-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .developer {
+            color: #1a73e8;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .version {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background: #fff;
+            margin-top: 1px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 15px;
+            padding: 15px;
+            background: #fff;
+        }
+
+        .version-btn, .download-btn {
+            flex: 1;
+            padding: 12px;
+            border-radius: 25px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .version-btn {
+            background: #fff;
+            color: #333;
+        }
+
+        .download-btn {
+            background: #1a73e8;
+            color: #fff;
+            border: none;
+        }
+
+        .section {
+            margin-top: 10px;
+            background: #fff;
+            padding: 15px;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .screenshots {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            padding-bottom: 10px;
+        }
+
+        .screenshot {
+            width: 200px;
+            height: 400px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .about {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .tags {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .tag {
+            padding: 5px 15px;
+            border-radius: 15px;
+            background: #f5f5f5;
+            font-size: 14px;
+        }
+
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            background: #fff;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <span class="back-button"></span>
+        <div class="header-right">
+        </div>
+    </div>
+
+    <div class="app-info">
+        <img src="https://files.catbox.moe/ipsze9.webp" alt="小米" class="app-icon">
+        <div class="app-details">
+            <div class="app-name">小米加速器</div>
+            <div class="developer"></div>
+            <div class="version">2.0.5・最新版本</div>
+        </div>
+    </div>
+
+<div class="app-list">
+        <div class="app-item">
+            
+            <div class="app-info">
+                
+                
+            <div class="rating">4.9 ★ <span class="app-size"></span></div>
+        <div class="stat-item">
+            <div class="stat-value">49.55MB</div>
+            <div class="stat-label">大小</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-value">ALL</div>
+            <div class="stat-label">安卓</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-value">官方版</div>
+            <div class="stat-label">渠道</div>
+        </div>
+    </div>
+
+    <div class="action-buttons">
+        <button class="version-btn">
+            <a href="https://share.feijipan.com/s/zqDGceqQ" style="color: black; text-decoration: none;">版本</a>
+            </button>
+        <button class="download-btn">
+            <a href="https://mibox.app/" style="color: white; text-decoration: none;">官网</a>
+            </button>
+    </div>
+
+    <div class="section">
+        <div class="section-header">
+            <div class="section-title">新变化</div>
+            <span></span>
+        </div>
+        <div>应部分用户的要求，我们提供了一部分高品质的收费线路。用户可以在小米商城购买卡密，然后在小米加速app里进行卡密验证，验证成功后，即可使用收费线路。</div>
+    </div>
+
+    <div class="section">
+        <div class="section-header">
+            <div class="section-title">应用截图</div>
+        </div>
+        <div class="screenshots">
+            <img src="https://files.catbox.moe/0rapz6.jpg" alt="截图1" class="screenshot">
+            <img src="https://files.catbox.moe/u04bnt.jpg" alt="截图2" class="screenshot">
+        </div>
+    </div>
+    
+    <div class="section">
+        <div class="section-header">
+            <div class="section-title">节点永远免费吗？有收费线路吗？</div>
+            <span></span>
+        </div>
+        <div class="about">
+
+免费线路会永远做下去！
+<p>以后会适当加一些广告，以支付线路成本。
+
+<p>
+<p>对于绝大部分用户来说，免费线路足够使用了。但是有少数用户需要更稳定、速度更快的线路，还有些用户需要某些特定国家的线路。所以会尝试做一些线路给他们用。
+
+        </div>
+        <div class="tags">
+            <span class="tag">实用</span>
+            <span class="tag">工具</span>
+        </div>
+    </div>
+
+</body>
+</html>
